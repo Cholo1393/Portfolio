@@ -126,15 +126,15 @@ window.addEventListener('load', function() {
   // Démarrer le chargement
   setTimeout(incrementProgress, loadingDuration / 100);
 });
-// Sélectionne tous les éléments avec la classe "button"
-const buttons = document.querySelectorAll('.button');
+// // Sélectionne tous les éléments avec la classe "button"
+// const buttons = document.querySelectorAll('.button');
 
-// Parcourt chaque bouton et ajoute un gestionnaire d'événements au clic
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.add('clicked');
-    setTimeout(() => {
-      button.classList.remove('clicked');
-    }, 300);
-  });
-});
+// // Parcourt chaque bouton et ajoute un gestionnaire d'événements au clic
+// buttons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     button.classList.add('clicked');
+//     setTimeout(() => {
+//       button.classList.remove('clicked');
+//     }, 300);
+//   });
+// });
