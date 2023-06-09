@@ -293,7 +293,7 @@ footer {
   }
 }
 
-.background {
+/* .background {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -301,7 +301,7 @@ footer {
   left: 0;
   background: #3E1E68;
   overflow: hidden;
-}
+} */
 
 .background span {
   width: 20vmin;
