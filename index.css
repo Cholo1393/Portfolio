@@ -508,3 +508,12 @@ footer {
 /* .button:hover {
   background-color: #0056b3;
 } */
+@media screen and (max-width: 480px) {
+  /* Styles spécifiques pour les téléphones */
+  
+  /* Styles pour le loader */
+  #loader-video {
+    width: 100%;
+    height: auto;
+  }
+}
