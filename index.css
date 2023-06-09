@@ -495,3 +495,16 @@ footer {
   transform-origin: -5vw 5vh;
   box-shadow: -40vmin 0 5.734480056254011vmin currentColor;
 }
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
