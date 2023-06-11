@@ -136,8 +136,8 @@
     <div class="container">
       <h2>Contact</h2>
       <p>N'hésitez pas à me contacter pour toute question ou opportunité professionnelle.</p>
-      <form action="envoyer_formulaire.php" method="POST">
-        <input type="text" name="nom" placeholder="Nom" required>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Nom" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="tel" name="telephone" placeholder="Téléphone">
         <textarea name="message" placeholder="Message" required></textarea>
