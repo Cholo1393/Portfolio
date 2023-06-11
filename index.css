@@ -508,63 +508,14 @@ footer {
 /* .button:hover {
   background-color: #0056b3;
 } */
-/* Styles spécifiques aux téléphones */
+/* Styles pour les appareils de petite taille (téléphones) */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   body {
     font-size: 14px;
   }
   
-  /* Modifier les dimensions de l'écran de chargement */
-  #loader {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    z-index: 9999;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    position: absolute;
-  }
-  
-  /* Modifier les styles du logo */
-  #logo-container video {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Modifier les styles de la section "Présentation" */
-  #presentation {
-    padding: 20px;
-  }
-  
-  /* Modifier les styles de la section "Curriculum Vitae" */
-  #cv {
-    padding: 20px;
-  }
-  
-  /* Modifier les styles de la section "Portfolio" */
-  #portfolio {
-    padding: 20px;
-  }
-  
-  /* Modifier les styles de la section "Contact" */
-  #contact {
-    padding: 20px;
-  }
-}
-
-/* Styles spécifiques aux tablettes */
-
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-  
-  /* Modifier les dimensions de l'écran de chargement */
+  /* Styles pour l'écran de chargement */
   #loader {
     width: 100%;
     height: 100vh;
@@ -578,28 +529,76 @@ footer {
     justify-content: center;
   }
   
-  /* Modifier les styles du logo */
+  /* Styles pour le logo */
   #logo-container video {
     max-width: 100%;
     height: auto;
   }
   
-  /* Modifier les styles de la section "Présentation" */
+  /* Styles pour la section "Présentation" */
+  #presentation {
+    padding: 20px;
+  }
+  
+  /* Styles pour la section "Curriculum Vitae" */
+  #cv {
+    padding: 20px;
+  }
+  
+  /* Styles pour la section "Portfolio" */
+  #portfolio {
+    padding: 20px;
+  }
+  
+  /* Styles pour la section "Contact" */
+  #contact {
+    padding: 20px;
+  }
+}
+
+/* Styles pour les appareils de taille moyenne (tablettes) */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+  
+  /* Styles pour l'écran de chargement */
+  #loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Styles pour le logo */
+  #logo-container video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Styles pour la section "Présentation" */
   #presentation {
     padding: 40px;
   }
   
-  /* Modifier les styles de la section "Curriculum Vitae" */
+  /* Styles pour la section "Curriculum Vitae" */
   #cv {
     padding: 40px;
   }
   
-  /* Modifier les styles de la section "Portfolio" */
+  /* Styles pour la section "Portfolio" */
   #portfolio {
     padding: 40px;
   }
   
-  /* Modifier les styles de la section "Contact" */
+  /* Styles pour la section "Contact" */
   #contact {
     padding: 40px;
   }
