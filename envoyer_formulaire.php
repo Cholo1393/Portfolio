@@ -5,17 +5,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $telephone = $_POST["telephone"];
   $message = $_POST["message"];
 
+  // Configurer les paramètres de l'e-mail
   $destinataire = "jean-christophe.matti@epitech.eu";
-  $sujet = "Nouveau message de contact";
-  $contenu = "Nom: $nom\n";
-  $contenu .= "Email: $email\n";
-  $contenu .= "Téléphone: $telephone\n";
-  $contenu .= "Message: $message\n";
+  $sujet = "Nouveau message de formulaire de contact";
+  $corpsMessage = "Nom: " . $nom . "\n" .
+                  "Email: " . $email . "\n" .
+                  "Téléphone: " . $telephone . "\n" .
+                  "Message: " . $message;
 
-  $headers = "From: $email\r\n";
-  $headers .= "Reply-To: $email\r\n";
+  // Envoyer l'e-mail
+  $envoi = mail($destinataire, $sujet, $corpsMessage);
 
-  if (mail($destinataire, $sujet, $contenu, $headers)) {
+  if ($envoi) {
     echo "Votre message a été envoyé avec succès.";
   } else {
     echo "Une erreur s'est produite lors de l'envoi du message.";
