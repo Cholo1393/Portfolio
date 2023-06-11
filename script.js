@@ -138,3 +138,10 @@ window.addEventListener('load', function() {
 //     }, 300);
 //   });
 // });
+function showConfirmation() {
+  var confirmationDiv = document.getElementById("confirmation");
+  confirmationDiv.style.display = "block";
+  setTimeout(function() {
+    confirmationDiv.style.display = "none";
+  }, 5000);
+}

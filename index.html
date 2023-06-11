@@ -93,7 +93,7 @@
         <a href="#portfolio">Portfolio</a>
       </div> -->
       <div class="phrase">
-        <p>Dans le cadre de ma formation à la Web@cadémie, je suis à la recherche d'une alternance à partir du 18 septembre 2023 pour une durée de 14 mois au rythme de 3 semaines en entreprise et une semaine à l'école</p>
+<p>Dans le cadre de ma formation à la Web@cadémie, je suis à la recherche d'une alternance à partir du 18 septembre 2023 pour une durée de 14 mois au rythme de 3 semaines en entreprise et une semaine à l'école</p>
       </div>
       <div class="info">
         <p>Nom: Matti</p>
@@ -136,22 +136,23 @@
     <div class="container">
       <h2>Contact</h2>
       <p>N'hésitez pas à me contacter pour toute question ou opportunité professionnelle.</p>
-      <form name="contact" method="POST" data-netlify="true" onsubmit="handleFormSubmit(event)">
+      <form name="contact" method="POST" data-netlify="true">
         <input type="text" name="name" placeholder="Nom" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="tel" name="telephone" placeholder="Téléphone">
         <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Envoyer</button>
+        <button type="submit" onclick="showConfirmation()">Envoyer</button>
       </form>
+      <div id="confirmation" style="display: none;">
+        <audio src="labo.mp3" autoplay></audio>
+        <img src="moi.JPG" alt="Confirmation">
+        <h2>Formulaire envoyé avec succès !</h2>
+        <p>Merci pour votre message. Nous vous contacterons bientôt.</p>
+      </div>
     </div>
   </section>
   
-  <div id="confirmation" style="display: none;">
-    <audio src="labo.mp3" autoplay></audio>
-    <img src="moi.JPG" alt="Confirmation">
-    <h2>Formulaire envoyé avec succès !</h2>
-    <p>Merci pour votre message. Nous vous contacterons bientôt.</p>
-  </div>
+  
 
   <footer>
     <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
