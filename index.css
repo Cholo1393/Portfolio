@@ -513,6 +513,8 @@ footer {
 @media only screen and (max-width: 767px) {
   body {
     font-size: 14px;
+    display: flex;
+    justify-content: center;
   }
 
   #loader {
@@ -520,7 +522,8 @@ footer {
   }
 
   #presentation {
-    display: block; /* Affiche le contenu de la page après le chargement */
+    display: flex;
+    justify-content: center; /* Affiche le contenu de la page après le chargement */
   }
 
   /* Ajoutez ici les styles spécifiques aux petits appareils */
