@@ -138,3 +138,7 @@ window.addEventListener('load', function() {
 //     }, 300);
 //   });
 // });
+// Après avoir traité la soumission réussie du formulaire
+
+// Redirigez l'utilisateur vers la page de confirmation personnalisée
+window.location.href = 'confirmation.html';
