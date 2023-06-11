@@ -615,17 +615,3 @@ footer {
 .button:hover {
   background-color: #0056b3;
 }
-
-.download-button {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.download-button:hover {
-  background-color: #0056b3;
-}
